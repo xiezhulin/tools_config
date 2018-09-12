@@ -1,0 +1,13 @@
+Android Studio change cache folder, but C:\Users\Administrator\.AndroidStudio3.1 created automatically
+1. change .AndroidStudio: D:\Program Files\Android\Android Studio\bin\idea.properties
+    idea.config.path=E:/Android/ideaconfig/.AndroidStudio/config
+    idea.system.path=E:/Android/ideaconfig/.AndroidStudio/system
+    #from C:\Users\Administrator\.AndroidStudio3.1  (3.1 is current version, others can deleted)
+ 2. add system enviornment to change .gradle
+    GRADLE_USER_HOME=E:/Android/ideaconfig/.gradle
+    #(or) Settings -> Gradle -> Service directory path: E:/Android/ideaconfig/.gradle
+ 3. add system enviornment and modify xx.ini path to change .android
+    # config avd path under sdk home (from: C:\Users\Administrator)
+    ANDROID_SDK_HOME=E:\Android\Sdk
+    #(modify) path=E:\Android\Sdk\.android\avd\Nexus_5X_API_25_x86.avd
+
